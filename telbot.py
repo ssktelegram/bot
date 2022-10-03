@@ -20,40 +20,41 @@ async def handler(event):
        msg=event.raw_text
        await client.send_message(997904331,msg)
          
-    if chatid==-1001160797877:#(Price Histry detail)
+    if chatid==-1001160797877 or -1001293749899 or -1001450755585 or -1001420742409:
+                #(Price Histry detail) or (GrowDeals) or (TrindingDeals) or (TrueGrabbers)
         msg=event.raw_text
         try:
          await client.send_message(5739096966,msg)
-        except ValueError:
-            print(ValueError)
+        except ValueError :
+            print(ValueError.args)
 
-    if chatid==-1001293749899:#(GrowDeals)
-        msg=event.raw_text
-        try:
-         await client.send_message(5739096966,msg)
-        except ValueError:
-            print(ValueError)
+    # if chatid==-1001293749899:#(GrowDeals)
+    #     msg=event.raw_text
+    #     try:
+    #      await client.send_message(5739096966,msg)
+    #     except ValueError:
+    #         print(ValueError)
 
-    if chatid==997904331:#(GrowDeals)
-        msg=event.raw_text
-        try:
-         await client.send_message(5739096966,msg)
-        except ValueError:
-            print(ValueError)
+    # if chatid==997904331:#(GrowDeals)
+    #     msg=event.raw_text
+    #     try:
+    #      await client.send_message(5739096966,msg)
+    #     except ValueError:
+    #         print(ValueError)
             
-    if chatid==-1001450755585:#(TrindingDeals)
-        msg=event.raw_text
-        try:
-         await client.send_message(5739096966,msg)
-        except ValueError:
-            print(ValueError)
+    # if chatid==-1001450755585:#(TrindingDeals)
+    #     msg=event.raw_text
+    #     try:
+    #      await client.send_message(5739096966,msg)
+    #     except ValueError:
+    #         print(ValueError)
             
-    if chatid==-1001420742409:#(TrueGrabbers)
-        msg=event.raw_text
-        try:
-         await client.send_message(5739096966,msg)
-        except ValueError:
-            print(ValueError)
+    # if chatid==-1001420742409:#(TrueGrabbers)
+    #     msg=event.raw_text
+    #     try:
+    #      await client.send_message(5739096966,msg)
+    #     except ValueError:
+    #         print(ValueError)
 
 
 client.start()
