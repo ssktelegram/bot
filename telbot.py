@@ -25,16 +25,16 @@ async def handler(event):
        await client.send_file(5739096966,path,caption=msg)
     if chatid==-1001160797877:#(Price Histry detail)7#997904331:#(me)
        msg=event.raw_text
-       await client.send_message(5739096966,msg)
+       await client.send_file(5739096966,path,caption=msg)
     if chatid==-1001293749899:#(GrowDeals)7#997904331:#(me)
        msg=event.raw_text
-       await client.send_message(5739096966,msg)
+       await client.send_file(5739096966,path,caption=msg)
     if chatid==-1001450755585:#(TrindingDeals)7#997904331:#(me)
        msg=event.raw_text
-       await client.send_message(5739096966,msg)
+       await client.send_file(5739096966,path,caption=msg)
     if chatid==-1001420742409:#(TrueGrabbers)7#997904331:#(me)
        msg=event.raw_text
-       await client.send_message(5739096966,msg)
+       await client.send_file(5739096966,path,caption=msg)
        
     # if chatid==-1001160797877 or -1001293749899 or -1001450755585 or -1001420742409:
     #             #(Price Histry detail) or (GrowDeals) or (TrindingDeals) or (TrueGrabbers)
