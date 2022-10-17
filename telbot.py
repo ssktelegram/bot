@@ -38,7 +38,6 @@ async def handler(event):
     if chatid==-1001420742409:#(TrueGrabbers)7#997904331:#(me)
        msg=event.raw_text
        await client.send_message(1485109749,msg)
-     
        
     # if chatid==-1001160797877 or -1001293749899 or -1001450755585 or -1001420742409:
     #             #(Price Histry detail) or (GrowDeals) or (TrindingDeals) or (TrueGrabbers)
