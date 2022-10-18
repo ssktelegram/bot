@@ -44,7 +44,7 @@ async def handler(event):
        if chatid == 997904331:  # (Price Histry detail)7#997904331:#(me)
         msg = event.raw_text
        #    await client.send_message(5739096966,msg)
-       await client.send_message(1485109749, msg)
+        await client.send_message(1485109749, msg)
        if chatid == -1001160797877:  # (Price Histry detail)7#997904331:#(me)
         msg = event.raw_text
         await client.send_message(1485109749, msg)
