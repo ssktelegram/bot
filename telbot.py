@@ -20,49 +20,93 @@ async def handler(event):
     # print(chat)
     path = await client.download_media(event.media, "./photo")
     print('File saved to', path)  # printed after download is done
-    if (path):
-       if chatid == 997904331:  # (Price Histry detail)7#997904331:#(me)
-        msg = event.raw_text
-       #    await client.send_message(5739096966,msg)
-        await client.send_file(1485109749,path,caption=msg)
-       if chatid == -1001160797877:  # (Price Histry detail)7#997904331:#(me)
-        msg = event.raw_text
-        await client.send_file(1485109749,path,caption=msg)
-       if chatid == 732565199:  # (test)7#997904331:#(me)
-        msg = event.raw_text
-        await client.send_file(1485109749,path,caption=msg)
-       if chatid == -1001293749899:  # (GrowDeals)7#997904331:#(me)
-        msg = event.raw_text
-        await client.send_file(1485109749,path,caption=msg)
-       if chatid == -1001450755585:  # (TrindingDeals)7#997904331:#(me)
-        msg = event.raw_text
-        await client.send_file(1485109749,path,caption=msg)
-       if chatid == -1001420742409:  # (TrueGrabbers)7#997904331:#(me)
-        msg = event.raw_text
-        await client.send_file(1485109749,path,caption=msg)
+    rawdata = event.raw_text
+    if "amzn" in rawdata:
+     if (path):
+        if chatid == 997904331:  # (Price Histry detail)7#997904331:#(me)
+         msg = event.raw_text
+        #    await client.send_message(5739096966,msg)
+         await client.send_file(5739096966,path,caption=msg)
+        if chatid == -1001160797877:  # (Price Histry detail)7#997904331:#(me)
+         msg = event.raw_text
+         await client.send_file(5739096966,path,caption=msg)
+        if chatid == 732565199:  # (test)7#997904331:#(me)
+         msg = event.raw_text
+         await client.send_file(5739096966,path,caption=msg)
+        if chatid == -1001293749899:  # (GrowDeals)7#997904331:#(me)
+         msg = event.raw_text
+         await client.send_file(5739096966,path,caption=msg)
+        if chatid == -1001450755585:  # (TrindingDeals)7#997904331:#(me)
+         msg = event.raw_text
+         await client.send_file(5739096966,path,caption=msg)
+        if chatid == -1001420742409:  # (TrueGrabbers)7#997904331:#(me)
+         msg = event.raw_text
+         await client.send_file(5739096966,path,caption=msg)
+     else:
+        if chatid == 997904331:  # (Price Histry detail)7#997904331:#(me)
+         msg = event.raw_text
+        #    await client.send_message(5739096966,msg)
+         await client.send_message(5739096966, msg)
+        if chatid == -1001160797877:  # (Price Histry detail)7#997904331:#(me)
+         msg = event.raw_text
+         await client.send_message(5739096966, msg)
+        if chatid == 732565199:  # (test)7#997904331:#(me)
+         msg = event.raw_text
+         await client.send_message(5739096966, msg)
+        if chatid == -1001293749899:  # (GrowDeals)7#997904331:#(me)
+         msg = event.raw_text
+         await client.send_message(5739096966, msg)
+        if chatid == -1001450755585:  # (TrindingDeals)7#997904331:#(me)
+         msg = event.raw_text
+         await client.send_message(5739096966, msg)
+        if chatid == -1001420742409:  # (TrueGrabbers)7#997904331:#(me)
+         msg = event.raw_text
+         await client.send_message(5739096966, msg)
+         
     else:
-       if chatid == 997904331:  # (Price Histry detail)7#997904331:#(me)
-        msg = event.raw_text
-       #    await client.send_message(5739096966,msg)
-        await client.send_message(1485109749, msg)
-       if chatid == -1001160797877:  # (Price Histry detail)7#997904331:#(me)
-        msg = event.raw_text
-        await client.send_message(1485109749, msg)
-       if chatid == 732565199:  # (test)7#997904331:#(me)
-        msg = event.raw_text
-        await client.send_message(1485109749, msg)
-       if chatid == -1001293749899:  # (GrowDeals)7#997904331:#(me)
-        msg = event.raw_text
-        await client.send_message(1485109749, msg)
-       if chatid == -1001450755585:  # (TrindingDeals)7#997904331:#(me)
-        msg = event.raw_text
-        await client.send_message(1485109749, msg)
-       if chatid == -1001420742409:  # (TrueGrabbers)7#997904331:#(me)
-        msg = event.raw_text
-        await client.send_message(1485109749, msg)
-       
-       
-       
+         if (path):
+          if chatid == 997904331:  # (Price Histry detail)7#997904331:#(me)
+           msg = event.raw_text
+          #    await client.send_message(5739096966,msg)
+           await client.send_file(1485109749,path,caption=msg)
+          if chatid == -1001160797877:  # (Price Histry detail)7#997904331:#(me)
+           msg = event.raw_text
+           await client.send_file(1485109749,path,caption=msg)
+          if chatid == 732565199:  # (test)7#997904331:#(me)
+           msg = event.raw_text
+           await client.send_file(1485109749,path,caption=msg)
+          if chatid == -1001293749899:  # (GrowDeals)7#997904331:#(me)
+           msg = event.raw_text
+           await client.send_file(1485109749,path,caption=msg)
+          if chatid == -1001450755585:  # (TrindingDeals)7#997904331:#(me)
+           msg = event.raw_text
+           await client.send_file(1485109749,path,caption=msg)
+          if chatid == -1001420742409:  # (TrueGrabbers)7#997904331:#(me)
+           msg = event.raw_text
+           await client.send_file(1485109749,path,caption=msg)
+         else:
+          if chatid == 997904331:  # (Price Histry detail)7#997904331:#(me)
+           msg = event.raw_text
+          #    await client.send_message(5739096966,msg)
+           await client.send_message(1485109749, msg)
+          if chatid == -1001160797877:  # (Price Histry detail)7#997904331:#(me)
+           msg = event.raw_text
+           await client.send_message(1485109749, msg)
+          if chatid == 732565199:  # (test)7#997904331:#(me)
+           msg = event.raw_text
+           await client.send_message(1485109749, msg)
+          if chatid == -1001293749899:  # (GrowDeals)7#997904331:#(me)
+           msg = event.raw_text
+           await client.send_message(1485109749, msg)
+          if chatid == -1001450755585:  # (TrindingDeals)7#997904331:#(me)
+           msg = event.raw_text
+           await client.send_message(1485109749, msg)
+          if chatid == -1001420742409:  # (TrueGrabbers)7#997904331:#(me)
+           msg = event.raw_text
+           await client.send_message(1485109749, msg)
+            
+        
+        
        
        
     # if chatid==-1001160797877 or -1001293749899 or -1001450755585 or -1001420742409:
