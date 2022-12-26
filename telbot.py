@@ -32,7 +32,12 @@ async def handler(event):
          await client.send_file(5739096966,path,caption=msg)
         if chatid == 732565199:  # (test)7#997904331:#(me)
          msg = event.raw_text
+        #  try:
+         sender = await event.get_sender()
+         print(sender)
          await client.send_file(5739096966,path,caption=msg)
+        #  except e:
+        #      print(e)
         if chatid == -1001293749899:  # (GrowDeals)7#997904331:#(me)
          msg = event.raw_text
          await client.send_file(5739096966,path,caption=msg)
@@ -94,6 +99,7 @@ async def handler(event):
            await client.send_message(1485109749, msg)
           if chatid == 732565199:  # (test)7#997904331:#(me)
            msg = event.raw_text
+           print(msg)
            await client.send_message(1485109749, msg)
           if chatid == -1001293749899:  # (GrowDeals)7#997904331:#(me)
            msg = event.raw_text
