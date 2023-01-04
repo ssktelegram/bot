@@ -21,6 +21,7 @@ async def handler(event):
     path = await client.download_media(event.media, "./photo")
     print('File saved to', path)  # printed after download is done
     rawdata = event.raw_text
+    
     if "amzn" in rawdata:
      if (path):
         if chatid == 997904331:  # (Price Histry detail)7#997904331:#(me)
