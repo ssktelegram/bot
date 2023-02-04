@@ -43,16 +43,16 @@ async def handler(event):
         # #    await client.send_message(5739096966,msg)
         #  await client.send_file(5739096966,path,caption=msg)
         
-        
+       # 5919846844 for inrdeals
         
         if chatid == -1001160797877:  # (Price Histry detail)7#997904331:#(me)
          msg = event.raw_text
-         await client.send_file(5739096966,path,caption=msg)
+         await client.send_file(5919846844,path,caption=msg)
          
        
         if chatid == -1001480964161:  # (EarnKaro (Deals & Offers))
          msg = event.raw_text
-         await client.send_file(5739096966,path,caption=msg)
+         await client.send_file(5919846844,path,caption=msg)
          
          
          
@@ -81,12 +81,12 @@ async def handler(event):
      else:
         if chatid == -1001160797877:  # (Price Histry detail)7#997904331:#(me)
          msg = event.raw_text
-         await client.send_message(5739096966,path,caption=msg)
+         await client.send_message(5919846844,path,caption=msg)
          
        
         if chatid == -1001480964161:  # (EarnKaro (Deals & Offers))
          msg = event.raw_text
-         await client.send_message(5739096966,path,caption=msg)
+         await client.send_message(5919846844,path,caption=msg)
          
          
     else:
